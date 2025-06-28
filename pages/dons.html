@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faire un Don - Priorité Santé</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="logo"><img src="./images/logo.jpg" style="width:80px; height: 80px;" alt=""></div>
+            <div class="elements">
+                <ul class="navLinks">
+                    <li><a href="#accueil">+224 623 10 96 92 92</a></li>
+                    <li><a href="#services">prioritesante@gmail.com</a></li>
+                </ul>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="cliniques.html">Cliniques</a></li>
+                <li><a href="maternite.html">Maternité</a></li>
+                <li><a href="dons.html">Faire un don</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="page-header" data-aos="fade-up">
+            <h1>Soutenez Notre Action</h1>
+            <p>Votre don fait la différence dans la vie de nombreuses personnes</p>
+        </section>
+
+        <section class="donation-impact" data-aos="fade-up">
+            <h2>L'Impact de Votre Don</h2>
+            <div class="impact-grid">
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Soins Médicaux</h3>
+                    <p>Financer des soins médicaux pour les personnes dans le besoin</p>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Équipements</h3>
+                    <p>Améliorer nos installations et équipements médicaux</p>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Formation</h3>
+                    <p>Former notre personnel médical aux dernières techniques</p>
+                </div>
+                <div class="impact-card" data-aos="zoom-in" data-aos-delay="400">
+                    <i class="fas fa-ambulance"></i>
+                    <h3>Urgences</h3>
+                    <p>Renforcer nos capacités d'intervention d'urgence</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-form" data-aos="fade-up">
+            <h2>Faire un Don</h2>
+            <div class="form-container">
+                <form id="donationForm">
+                    <div class="form-group">
+                        <label for="donationType">Type de Don</label>
+                        <select id="donationType" name="donationType" required>
+                            <option value="">Sélectionnez un type de don</option>
+                            <option value="medical">Matériel Médical</option>
+                            <option value="financial">Don Financier</option>
+                            <option value="equipment">Équipements</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donorName">Nom Complet</label>
+                        <input type="text" id="donorName" name="donorName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donorEmail">Email</label>
+                        <input type="email" id="donorEmail" name="donorEmail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donorPhone">Téléphone</label>
+                        <input type="tel" id="donorPhone" name="donorPhone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donationDescription">Description du Don</label>
+                        <textarea id="donationDescription" name="donationDescription" rows="4" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="donationAmount">Montant (si don financier)</label>
+                        <input type="number" id="donationAmount" name="donationAmount" min="0">
+                    </div>
+
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-donation" data-aos="fade-up">
+            <h2>Contactez-nous pour un Don</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Téléphone</h3>
+                    <p>+224 623 10 96 92</p>
+                    <p>+224 623 10 96 92</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>dons@prioritesante.org</p>
+                    <p>contact@ong-medicale.org</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Adresse</h3>
+                    <p>Marché Foncidaire</p>
+                    <p>Conakry, Guinée</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="donation-info" data-aos="fade-up">
+            <h2>Informations Importantes</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Transparence</h3>
+                    <p>Nous nous engageons à utiliser vos dons de manière transparente et efficace</p>
+                </div>
+                <div class="info-card">
+                    <h3>Reçu Fiscal</h3>
+                    <p>Un reçu fiscal vous sera délivré pour tout don financier</p>
+                </div>
+                <div class="info-card">
+                    <h3>Suivi</h3>
+                    <p>Nous vous tiendrons informés de l'utilisation de votre don</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="./Images/logo.jpg" style="width: 90px; height: 90px;" alt="Logo ONG Médicale">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li>+224 623 10 96 92</li>
+                        <li>contact@ong-medicale.org</li>
+                        <li>Marché Foncidaire</li>
+                        <li>Conakry, Guinnée</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="#" title="Facebook">f</a>
+                        <a href="#" title="Twitter">t</a>
+                        <a href="#" title="LinkedIn">in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy;2024 ONG Médicale Priorité Santé. Tous droits réservés.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+
+</html> 

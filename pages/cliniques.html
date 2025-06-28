@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Cliniques - Priorité Santé</title>
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="logo"><img src="./images/logo.jpg" alt=""></div>
+         
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#cliniques">Cliniques</a></li>
+                <li><a href="#partners">Partenaires</a></li>
+                <li><a href="#contact">Contacts</a></li>
+                <li><a href="#Apropos">Apropos</a></li>
+            </ul>
+        </nav>
+        <section class="page-header">
+            <h1>Nos Cliniques</h1>
+            <p>Trouvez la clinique la plus proche de chez vous</p>
+        </section>
+
+        <div class="search-container">
+            <form id="search-form" class="search-form">
+                <div class="search-input-group">
+                    <input type="text" id="search-input" placeholder="Rechercher une clinique..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-filters">
+                    <select id="filter-service" class="filter-select">
+                        <option value="">Tous les services</option>
+                        <option value="general">Médecine générale</option>
+                        <option value="pediatrie">Pédiatrie</option>
+                        <option value="gynecologie">Gynécologie</option>
+                        <option value="dentaire">Dentaire</option>
+                    </select>
+                    <select id="filter-zone" class="filter-select">
+                        <option value="">Toutes les zones</option>
+                        <option value="conakry">Conakry</option>
+                        <option value="kankan">Kankan</option>
+                        <option value="kindia">Kindia</option>
+                        <option value="nzerekore">Nzérékoré</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <section class="cliniques-grid">
+            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="../Images/cinematic-man.png" alt="cliniques 1">
+                <h3>Clinique Saint-Jean</h3>
+                <p>Spécialisée en chirurgie</p>
+                <h1 class="numero">+224 623 10 96 92</h1>
+                <h3>Foncidaire /Lambanyi</h3>
+            </div>
+            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="../Images/cinematic-man.png" alt="cliniques 1">
+                <h3>Centre Médical du Sud</h3>
+                <p>Médecine générale et urgences</p>
+                <h1 class="numero">+224 623 10 96 92</h1>
+                <h3>Dixinn /Dixinn</h3>
+            </div>
+            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="../Images/cinematic-man.png" alt="cliniques 1">
+                <h3>Centre Médical du Sud</h3>
+                <p>Médecine générale et urgences</p>
+                <h1 class="numero">+224 623 10 96 92</h1>
+                <h3>Cimenterie /dubreka</h3>
+            </div>
+            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="400">
+                <img src="../Images/cinematic-man.png" alt="cliniques 1">
+                <h3>Centre Médical du Sud</h3>
+                <p>Médecine générale et urgences</p>
+                <h1 class="numero">+224 623 10 96 92</h1>
+                <h3>Almamya /kaloum</h3>
+            </div>
+            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="500">
+                <img src="../Images/cinematic-man.png" alt="cliniques 1">
+                <h3>Centre Médical du Sud</h3>
+                <p>Médecine générale et urgences</p>
+                <h1 class="numero">+224 623 10 96 92</h1>
+                <h3>Sangoyah /matoto</h3>
+            </div>
+        </section>
+
+        <div class="map-section">
+            <h2>Localisation des Cliniques</h2>
+            <div id="cliniques-map" class="cliniques-map"></div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+    <script src="../Scripts/main.js"></script>
+</body>
+
+</html> 
