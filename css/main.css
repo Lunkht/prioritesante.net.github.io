@@ -1046,3 +1046,102 @@ body {
         margin-top: 0.3rem;
     }
 }
+
+.pro-navbar {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #e6eaf0;
+    min-height: 60px;
+    z-index: 1500;
+    position: relative;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+.pro-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 2.7rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    justify-content: center;
+}
+.pro-nav-list li {
+    position: relative;
+    font-size: 1.08rem;
+    font-weight: 400;
+    color: #183153;
+    letter-spacing: 0.01em;
+}
+.pro-nav-list a {
+    color: #183153;
+    text-decoration: none;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    transition: background 0.15s;
+    display: inline-block;
+    text-align: center;
+    font-weight: 400;
+}
+.pro-nav-list a span {
+    display: block;
+    font-size: 0.98em;
+    font-weight: 500;
+}
+.pro-nav-list a:hover {
+    background: #f5f7fa;
+}
+.pro-nav-list i.fas.fa-chevron-down {
+    font-size: 0.85em;
+    margin-left: 0.3em;
+    vertical-align: middle;
+}
+.pro-nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-left: 1.5rem;
+}
+.pro-nav-search, .pro-nav-menu {
+    background: #f5f7fa;
+    border: none;
+    border-radius: 7px;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.25rem;
+    color: #183153;
+    cursor: pointer;
+    transition: background 0.15s, box-shadow 0.15s;
+    box-shadow: 0 1px 4px rgba(24,49,83,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro-nav-search:hover, .pro-nav-menu:hover {
+    background: #e6eaf0;
+}
+@media (max-width: 1100px) {
+    .pro-nav-list {
+        gap: 1.2rem;
+    }
+}
+@media (max-width: 900px) {
+    .pro-navbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem 0;
+    }
+    .pro-nav-list {
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        justify-content: flex-start;
+    }
+    .pro-nav-actions {
+        margin-left: 0;
+        margin-top: 0.5rem;
+        justify-content: flex-end;
+    }
+}
