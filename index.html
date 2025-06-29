@@ -20,10 +20,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
     <!-- Ajout des liens Leaflet avant la fermeture du head -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 
 <body>
@@ -103,9 +99,7 @@
                     <div class="search-input-group">
                         <input type="text" id="search-input" placeholder="Rechercher une clinique..."
                             class="search-input">
-                        <button type="submit" class="search-button">
-                            <i class="fas fa-search"></i>
-                        </button>
+                     
                     </div>
                     <div class="search-filters">
                         <select id="filter-service" class="filter-select">
@@ -123,6 +117,9 @@
                             <option value="nzerekore">Nzérékoré</option>
                         </select>
                     </div>
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </form>
             </div>
     
@@ -173,20 +170,20 @@
         <div class="dashboard">
             <div class="dashItem" data-aos="fade-right">
                 <div class="d-elem">
-                    <h1>500</h1>
+                    <h1>+500</h1>
                     <h2>Clients dans l'année</h2>
 
                 </div>
             </div>
             <div class="dashItem" data-aos="fade-up">
                 <div class="d-elem">
-                    <h1>600</h1>
+                    <h1>+600</h1>
                     <h2>Interventions</h2>
                 </div>
             </div>
             <div class="dashItem" data-aos="fade-left">
                 <div class="d-elem">
-                    <h1>200</h1>
+                    <h1>+200</h1>
                     <h2>Plus de </h2>
                 </div>
             </div>
@@ -243,61 +240,66 @@
             <div class="cliniques-grid">
                 <div class="cliniques-card" data-aos="fade-up" data-aos-delay="100">
                     <img src="./Images/cinematic-man.png" alt="cliniques 1">
-                    <h1>Clinique Saint-Jean</h1>
-                    <p>Spécialisée en chirurgie</p>
-                    <div class="phone_layout" style="display: flex; align-items: center; margin: 0 auto;">
-                        <img src="images/rein.png" style="width: 30px; height: 30px;" alt="">
-                        <h3 class="numero">+224 623 10 96 92</h3>
-
+                    <h1><i class="fas fa-hospital-alt"></i> Clinique Saint-Jean</h1>
+                    <p><i class="fas fa-stethoscope"></i> Spécialisée en chirurgie</p>
+                    <div class="card-contact">
+                        <span><i class="fas fa-phone"></i> <span class="numero">+224 623 10 96 92</span></span>
+                        <span><i class="fas fa-envelope"></i> <span class="email">contact@exemple.com</span></span>
                     </div>
-                    <i class="email">contact@exemple.com</i>
-
-                    <h3>Foncidaire /Lambanyi</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i> Foncidaire /Lambanyi</h3>
                 </div>
 
                 <div class="cliniques-card" data-aos="fade-up" data-aos-delay="200">
                     <img src="./Images/cinematic-man.png" alt="cliniques 1">
-                    <h1>Clinique Saint-Jean</h1>
-                    <p>Spécialisée en chirurgie</p>
-                    <div class="phone_layout" style="display: flex; align-items: center; margin: 0 auto;">
-                        <img src="images/rein.png" style="width: 30px; height: 30px;" alt="">
-                        <h3 class="numero">+224 623 10 96 92</h3>
-
+                    <h1><i class="fas fa-hospital-alt"></i> Clinique Saint-Jean</h1>
+                    <p><i class="fas fa-stethoscope"></i> Spécialisée en chirurgie</p>
+                    <div class="card-contact">
+                        <span><i class="fas fa-phone"></i> <span class="numero">+224 623 10 96 92</span></span>
+                        <span><i class="fas fa-envelope"></i> <span class="email">contact@exemple.com</span></span>
                     </div>
-                    <i class="email">contact@exemple.com</i>
-
-                    <h3>Cimenterie /dubreka</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i> Cimenterie /dubreka</h3>
                 </div>
 
-              
                 <div class="cliniques-card" data-aos="fade-up" data-aos-delay="300">
                     <img src="./Images/cinematic-man.png" alt="cliniques 1">
-                    <h1>Centre Médical</h1>
-                    <p>Médecine générale et urgences</p>
-                    <h2 class="numero">+224 623 10 96 92</h2>
-                    <i class="email">contact@exemple.com</i>
+                    <h1><i class="fas fa-hospital-alt"></i> Centre Médical</h1>
+                    <p><i class="fas fa-stethoscope"></i> Médecine générale et urgences</p>
+                    <div class="card-contact">
+                        <span><i class="fas fa-phone"></i> <span class="numero">+224 623 10 96 92</span></span>
+                        <span><i class="fas fa-envelope"></i> <span class="email">contact@exemple.com</span></span>
+                    </div>
+                    <h3><i class="fas fa-map-marker-alt"></i> </h3>
                 </div>
 
                 <div class="cliniques-card" data-aos="fade-up" data-aos-delay="400">
                     <img src="./Images/cinematic-man.png" alt="cliniques 1">
-                    <h1>ONG Priorité santé Cimenterie</h1>
-                    <p>Médecine générale et urgences</p>
-                    <h2 class="numero">+224 623 10 96 92</h2>
-                    <h3>Almamya /kaloum</h3>
+                    <h1><i class="fas fa-hospital-alt"></i> ONG Priorité santé Cimenterie</h1>
+                    <p><i class="fas fa-stethoscope"></i> Médecine générale et urgences</p>
+                    <div class="card-contact">
+                        <span><i class="fas fa-phone"></i> <span class="numero">+224 623 10 96 92</span></span>
+                        <span><i class="fas fa-envelope"></i> <span class="email">contact@exemple.com</span></span>
+                    </div>
+                    <h3><i class="fas fa-map-marker-alt"></i> Almamya /kaloum</h3>
                 </div>
                 <div class="cliniques-card" data-aos="fade-up" data-aos-delay="500">
                     <img src="./Images/cinematic-man.png" alt="cliniques 1">
-                    <h1>Centre Médical</h1>
-                    <p>Médecine générale et urgences</p>
-                    <h2 class="numero">+224 623 10 96 92</h2>
-                    <h3>Sangoyah /matoto</h3>
+                    <h1><i class="fas fa-hospital-alt"></i> Centre Médical</h1>
+                    <p><i class="fas fa-stethoscope"></i> Médecine générale et urgences</p>
+                    <div class="card-contact">
+                        <span><i class="fas fa-phone"></i> <span class="numero">+224 623 10 96 92</span></span>
+                        <span><i class="fas fa-envelope"></i> <span class="email">contact@exemple.com</span></span>
+                    </div>
+                    <h3><i class="fas fa-map-marker-alt"></i> Sangoyah /matoto</h3>
                 </div>
                 <div class="cliniques-card" data-aos="fade-up" data-aos-delay="500">
                     <img src="./Images/cinematic-man.png" alt="cliniques 1">
-                    <h1>Centre Médical</h1>
-                    <p>Médecine générale et urgences</p>
-                    <h2 class="numero">+224 623 10 96 92</h2>
-                    <h3>Sangoyah /matoto</h3>
+                    <h1><i class="fas fa-hospital-alt"></i> Centre Médical</h1>
+                    <p><i class="fas fa-stethoscope"></i> Médecine générale et urgences</p>
+                    <div class="card-contact">
+                        <span><i class="fas fa-phone"></i> <span class="numero">+224 623 10 96 92</span></span>
+                        <span><i class="fas fa-envelope"></i> <span class="email">contact@exemple.com</span></span>
+                    </div>
+                    <h3><i class="fas fa-map-marker-alt"></i> Sangoyah /matoto</h3>
                 </div>
             </div>
             <button class="read_more">Lire plus</button>

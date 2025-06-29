@@ -375,6 +375,15 @@ body {
     margin: 0.5rem;
 }
 
+.cliniques-card h1 i,
+.cliniques-card p i,
+.cliniques-card h3 i {
+    color: #1976d2;
+    margin-right: 0.5em;
+    font-size: 1em;
+    vertical-align: middle;
+}
+
 .cliniques-card p {
     color: #666;
     margin: 1rem;
@@ -385,6 +394,26 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0.5rem 0;
+}
+
+.card-contact {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin: 0.7em 0 0.7em 0;
+}
+
+.card-contact span {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    color: #333;
+    font-size: 1.05em;
+}
+
+.card-contact i {
+    color: #f39200;
+    font-size: 1.1em;
 }
 
 /* Section Partenaires */
