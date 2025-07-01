@@ -11,13 +11,12 @@
     <link rel="stylesheet" type="text/css" href="css/sections.css">
     <link rel="stylesheet" type="text/css" href="css/partners.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/cjs/react-dom.production.min.js"
         integrity="sha512-JNrK0svSdzmupRoUCGrnD5Im9ybaQ/dtwjbEE8top7nLk6qlV6jatbUinWJf1B+//gADpfBVm8nF1eyreAJX3w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
     <!-- Ajout des liens Leaflet avant la fermeture du head -->
 </head>
@@ -29,24 +28,25 @@
         </div>
         <div class="topbar-infos">
             <div class="topbar-info">
-                <i class="fas fa-phone"></i>
-                <span>Appel à unappointment <b>655-844-78-80</b></span>
+                <img src="./images/phone-call.svg" style="width: 25px;" alt="">
+
+                <span>Appel à unappointment <br> <b>655-844-78-80</b></span>
             </div>
             <div class="topbar-info">
-                <i class="fas fa-user-md"></i>
-                <span>Parlez à un médecin maintenant</span>
+                <img src="./images/user.svg" style="width: 25px;" alt="">
+                <span>Parlez à <br>un médecin maintenant</span>
             </div>
             <div class="topbar-info">
-                <i class="fas fa-calendar-check"></i>
-                <span>Prendre rendez-vous en ligne</span>
+                <img src="./images/mobile-button.svg" style="width: 25px;" alt="">
+                <span>Prendre<br> rendez-vous en ligne</span>
             </div>
             <div class="topbar-info">
-                <i class="fas fa-folder-open"></i>
+                <img src="./images/id-badge.svg" style="width: 25px;" alt="">
                 <span>MyChart</span>
             </div>
         </div>
         <div class="topbar-lang">
-            <i class="fas fa-globe"></i>
+            <img src="./images/globe.svg" style="width: 25px;" alt="">
             <select>
                 <option>English</option>
                 <option>Français</option>
@@ -72,17 +72,17 @@
     <main>
         <nav class="navbar pro-navbar">
             <ul class="pro-nav-list">
-                <li><a href="#find-doctor">Find a<br><span>Doctor</span></a></li>
-                <li><a href="#locations">Tous les emplacements <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#soins">Obtenir des soins <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#patients">Patients et visiteurs <i class="fas fa-chevron-down"></i></a></li>
-                <li><a href="#about">À propos de nous <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#find-doctor">Trouvez un<br><span>Docteur</span></a></li>
+                <li><a href="#locations">Tous les emplacements <i class="fi fi-rr-caret-down"></i></a></li>
+                <li><a href="#soins">Obtenir des soins <i class="fi fi-rr-caret-down"></i></a></li>
+                <li><a href="#patients">Patients et visiteurs <i class="fi fi-rr-caret-down"></i></a></li>
+                <li><a href="#about">À propos de nous <i class="fi fi-rr-caret-down"></i></a></li>
                 <li><a href="#don">Faire un<br><span>don</span></a></li>
-                <li><a href="#carrieres">Carrières <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#carrieres">Carrières <i class="fi fi-rr-caret-down"></i></a></li>
             </ul>
             <div class="pro-nav-actions">
-                <button class="pro-nav-search"><i class="fas fa-search"></i></button>
-                <button class="pro-nav-menu"><i class="fas fa-bars"></i></button>
+                <button class="pro-nav-search"><i class="fi fi-br-search"></i></button>
+                <button class="pro-nav-menu"><i class="fi fi-bs-menu-burger"></i></button>
             </div>
         </nav>
         <section id="home" class="section">
@@ -118,7 +118,7 @@
                         </select>
                     </div>
                     <button type="submit" class="search-button">
-                        <i class="fas fa-search"></i>
+                        <img src="./images/search.svg" style="width: 25px;" alt="">
                     </button>
                 </form>
             </div>
@@ -130,12 +130,9 @@
                 <div class="text_wrap">
                     <h1><span>Docteur</span> <br> Alpha Bérété</h1>
                     <h3>President de l'ONG Médicale Priorité Santé Guinnée</h3>
-                    <p class="a-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Natus, ullam molestias modi unde debitis quas sint deserunt accusamus, aliquam perferendis deleniti.
-                        Facere magni obcaecati quae cum soluta saepe, numquam animi!<br>
-                        Votre destionation privilegie pour une bonne prise en
-                        charge medicale. Ainsi tout votre familles sommes les bienvenue chez
-                        priorité santé sur tout le territoire nationaal
+                    <p class="a-subtitle"> Depuis plus de 10 ans, notre ONG s'engage à offrir un accès aux soins et à l'accompagnement pour les populations les plus vulnérables.
+                        Grâce à une équipe passionnée et à un réseau de partenaires engagés, nous avons pu soutenir plus de 5 000 bénéficiaires à travers des actions concrètes, innovantes et humaines. <br>
+                        Notre mission : soigner, protéger et redonner espoir à ceux qui en ont le plus besoin.
                     </p>
                 </div>
                 <img src="./Images/president.png" alt="">
