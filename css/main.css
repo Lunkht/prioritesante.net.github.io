@@ -1236,7 +1236,7 @@ body {
 }
 
 .virtual-care-section {
-  background: #2256a3;
+  background-image:linear-gradient(rgba(9, 85, 177, 0.71),rgba(22, 35, 210, 0.439)),url('../images/dame.jpg');
   color: #fff;
   padding: 4rem 0 5rem 0;
   text-align: center;
@@ -1272,7 +1272,6 @@ body {
   max-width: 950px;
   background: rgba(255,255,255,0.02);
   border-radius: 18px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.07);
   overflow: hidden;
   text-align: left;
 }
