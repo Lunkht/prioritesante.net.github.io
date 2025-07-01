@@ -129,7 +129,7 @@ body {
 
 .pro-navbar {
     width: 100%;
-    background: #fff;
+    background: #ff0000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,11 +154,11 @@ body {
     position: relative;
     font-size: 1.08rem;
     font-weight: 400;
-    color: #183153;
+    color: #ffffff;
     letter-spacing: 0.01em;
 }
 .pro-nav-list a {
-    color: #183153;
+    color: #ffffff;
     text-decoration: none;
     padding: 0.2rem 0.5rem;
     border-radius: 5px;
