@@ -33,7 +33,7 @@
 .testimonial-card {
     background: white;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); */
     transition: all 0.3s ease;
     overflow: hidden;
     position: relative;
@@ -41,7 +41,7 @@
 
 .testimonial-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); */
 }
 
 .testimonial-content {
@@ -78,7 +78,7 @@
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #fff;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .author-info h4 {

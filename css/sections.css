@@ -34,7 +34,7 @@
 .service-card {
     background: white;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05); */
     transition: all 0.3s ease;
     overflow: hidden;
     text-align: center;
@@ -43,7 +43,7 @@
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); */
 }
 
 .service-card img {
@@ -85,7 +85,7 @@
 .read_more:hover {
     background: #0056b3;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+    /* box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3); */
 }
 
 /* Grille responsive */

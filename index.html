@@ -4,19 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Priorité Santé</title>
+    <title>Cliniques Priorité Santé</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/testimonials.css">
     <link rel="stylesheet" type="text/css" href="css/sections.css">
     <link rel="stylesheet" type="text/css" href="css/partners.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
-    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/cjs/react-dom.production.min.js"
+       <!-- Dans le footer -->
+       <link rel="shortcut icon" href="assets/images/favicon-04.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"> 
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/cjs/react-dom.production.min.js"
         integrity="sha512-JNrK0svSdzmupRoUCGrnD5Im9ybaQ/dtwjbEE8top7nLk6qlV6jatbUinWJf1B+//gADpfBVm8nF1eyreAJX3w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
     <link rel="shortcut icon" href="images/Logo.png" type="image/x-icon">
     <!-- Ajout des liens Leaflet avant la fermeture du head -->
 </head>
@@ -89,10 +91,10 @@
         </nav>
         <section id="home" class="section">
          
-            <div class="text-wrap" data-aos="fade-up">
+            <div class="home-text-wrap" data-aos="fade-up">
                 <h1>Bienvenue chez nous<br> nous Gordon le Peuple en bonne Santé </h1>
+                <h4>Nous sommes l'un des plus grand système ONG Médical en Guinnée</h4>
                 <div class="miniTextWrap">
-                    <h4>Nous sommes l'un des plus grand système ONG Médical en Guinnée</h4>
                     <p class="subtitle"> </p>
                 </div>
             </div>
@@ -128,7 +130,8 @@
         <section id="Apropos" data-aos="fade-up">
             <div class="about-container">
                 <div class="text_wrap">
-                    <h1><span>Docteur</span> <br> Alpha Bérété</h1>
+                    <h1>Docteur</h1>
+                    <h2>Alpha Bérété</h2>
                     <h3>President de l'ONG Médicale Priorité Santé Guinnée</h3>
                     <p class="a-subtitle"> Depuis plus de 10 ans, notre ONG s'engage à offrir un accès aux soins et à l'accompagnement pour les populations les plus vulnérables.
                         Grâce à une équipe passionnée et à un réseau de partenaires engagés, nous avons pu soutenir plus de 5 000 bénéficiaires à travers des actions concrètes, innovantes et humaines. <br>
@@ -195,14 +198,14 @@
                   </div>
                 </div>
                 <div class="vc-service">
-                  <span class="vc-icon"><img src="images/phone.svg" alt=""></span>
+                  <span class="vc-icon"><img src="images/phone-call.svg" alt=""></span>
                   <div>
                     <b>Visites téléphoniques</b>
                     <p>Parlez à un médecin par téléphone.</p>
                   </div>
                 </div>
                 <div class="vc-service">
-                  <span class="vc-icon"><img src="images/expresscare.svg" alt=""></span>
+                  <span class="vc-icon"><img src="images/ambulance.svg" alt=""></span>
                   <div>
                     <b>ExpressCare virtuel</b>
                     <p>Évitez les urgences. Consultez un médecin dès maintenant pour des soins d'urgence virtuels.</p>
@@ -261,7 +264,11 @@
                         <h3>Responsable logistique</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
                     </div>
-
+                    <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
+                        <img src="./Images/directeur.png" alt="cause 3">
+                        <h3>Responsable logistique</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -317,7 +324,7 @@
                     <h1><i class="fas fa-hospital-alt"></i> Clinique Saint-Jean</h1>
                     <p><i class="fas fa-stethoscope"></i> Spécialisée en chirurgie</p>
                     <div class="card-contact">
-                        <span><i class="fas fa-phone"></i> <span class="numero">+224 623 10 96 92</span></span>
+                        <span><i class="fi fi-sr-phone-call"></i> <span class="numero">+224 623 10 96 92</span></span>
                         <span><i class="fas fa-envelope"></i> <span class="email">contact@exemple.com</span></span>
                     </div>
                     <h3><i class="fas fa-map-marker-alt"></i> Foncidaire /Lambanyi</h3>
@@ -328,7 +335,7 @@
                     <h1><i class="fas fa-hospital-alt"></i> Clinique Saint-Jean</h1>
                     <p><i class="fas fa-stethoscope"></i> Spécialisée en chirurgie</p>
                     <div class="card-contact">
-                        <span><i class="fas fa-phone"></i> <span class="numero">+224 623 10 96 92</span></span>
+                        <span><i class="fi fi-sr-phone-call"></i></i> <span class="numero">+224 623 10 96 92</span></span>
                         <span><i class="fas fa-envelope"></i> <span class="email">contact@exemple.com</span></span>
                     </div>
                     <h3><i class="fas fa-map-marker-alt"></i> Cimenterie /dubreka</h3>
@@ -507,16 +514,7 @@
                      
             
                     </div>
-                    <div class="contact-form">
-                        <h2>Envoyez-nous un message</h2>
-                        <form>
-                            <input type="text" placeholder="Nom et Prénom" required>
-                            <input type="tel" placeholder="Téléphone" required>
-                            <input type="email" placeholder="Email" required>
-                            <textarea placeholder="Votre message" rows="4" required></textarea>
-                            <button type="submit">Envoyer</button>
-                        </form>
-                    </div>
+                  
                 </div>
                 <div class="map-section">
                     <h2>Localisation des Cliniques</h2>
