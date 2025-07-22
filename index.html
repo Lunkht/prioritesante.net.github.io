@@ -7,10 +7,7 @@
     <title>Cliniques Priorité Santé</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/testimonials.css">
-    <link rel="stylesheet" type="text/css" href="css/sections.css">
-    <link rel="stylesheet" type="text/css" href="css/partners.css">
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
+
        <!-- Dans le footer -->
        <link rel="shortcut icon" href="assets/images/favicon-04.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -24,37 +21,7 @@
 </head>
 
 <body>
-    <div class="topbar">
-        <div class="topbar-logo">
-            <img src="./Images/logo.png" alt="ONG Médicale" />
-        </div>
-        <div class="topbar-infos">
-            <div class="topbar-info">
-                <img src="./images/phone-call.svg" style="width: 25px;" alt="">
 
-                <span>Appel à unappointment <br> <b>655-844-78-80</b></span>
-            </div>
-            <div class="topbar-info">
-                <img src="./images/user.svg" style="width: 25px;" alt="">
-                <span>Parlez à <br>un médecin maintenant</span>
-            </div>
-            <div class="topbar-info">
-                <img src="./images/mobile-button.svg" style="width: 25px;" alt="">
-                <span>Prendre<br> rendez-vous en ligne</span>
-            </div>
-            <div class="topbar-info">
-                <img src="./images/id-badge.svg" style="width: 25px;" alt="">
-                <span>MyChart</span>
-            </div>
-        </div>
-        <div class="topbar-lang">
-            <img src="./images/globe.svg" style="width: 25px;" alt="">
-            <select>
-                <option>English</option>
-                <option>Français</option>
-            </select>
-        </div>
-    </div>
     <!-- Modal de bienvenue -->
     <div id="welcome-modal" class="modal">
         <div class="modal-content">
@@ -72,75 +39,48 @@
     </div>
 
     <main>
-        <nav class="navbar pro-navbar">
-            <ul class="pro-nav-list">
-                <li><a href="#find-doctor">Trouvez un<br><span>Docteur</span></a></li>
-                <li><a href="#locations">Tous les emplacements <i class="fi fi-rr-caret-down"></i></a></li>
-                <li><a href="#soins">Obtenir des soins <i class="fi fi-rr-caret-down"></i></a></li>
-                <li><a href="#patients">Patients et visiteurs <i class="fi fi-rr-caret-down"></i></a></li>
-                <li><a href="#about">À propos de nous <i class="fi fi-rr-caret-down"></i></a></li>
-                <li><a href="#don">Faire un<br><span>don</span></a></li>
-                <li><a href="#carrieres">Carrières <i class="fi fi-rr-caret-down"></i></a></li>
-            </ul>
-            <div class="pro-nav-actions">
-                <button class="pro-nav-search"><img src="./images/search.svg" style="width: 25px;" alt="">
-                </button>
-                <button class="pro-nav-menu"><img src="./images/menu-burger.svg" style="width: 25px;" alt="">
-                </button>
-            </div>
-        </nav>
-        <section id="home" class="section">
-         
-            <div class="home-text-wrap" data-aos="fade-up">
-                <h1>Bienvenue chez nous<br> nous Gordon le Peuple en bonne Santé </h1>
-                <h4>Nous sommes l'un des plus grand système ONG Médical en Guinnée</h4>
-                <div class="miniTextWrap">
-                    <p class="subtitle"> </p>
-                </div>
-            </div>
-            <div class="search-container">
-                <form id="search-form" class="search-form">
-                    <div class="search-input-group">
-                        <input type="text" id="search-input" placeholder="Rechercher une clinique..."
-                            class="search-input">
-                    </div>
-                    <div class="search-filters">
-                        <select id="filter-service" class="filter-select">
-                            <option value="">Tous les services</option>
-                            <option value="general">Médecine générale</option>
-                            <option value="pediatrie">Pédiatrie</option>
-                            <option value="gynecologie">Gynécologie</option>
-                            <option value="dentaire">Dentaire</option>
-                        </select>
-                        <select id="filter-zone" class="filter-select">
-                            <option value="">Toutes les zones</option>
-                            <option value="conakry">Conakry</option>
-                            <option value="kankan">Kankan</option>
-                            <option value="kindia">Kindia</option>
-                            <option value="nzerekore">Nzérékoré</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="search-button">
-                        <img src="./images/search.svg" style="width: 25px;" alt="">
-                    </button>
-                </form>
+<header class="header">
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.svg" alt="Logo ONG Médicale"></a>
+            <h1><a href="index.html">Priorité Santé</a></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="pages/apropos.html">À propos</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/cliniques.html">Cliniques</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+        <a href="pages/dons.html" class="donate-button">Faire un don</a>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+</header>
+                <section class="hero-banner">
+            <div class="hero-content">
+                <h1>Soins de Santé de Qualité pour Tous</h1>
+                <p>Nous nous engageons à fournir des services médicaux accessibles et de haute qualité à travers nos cliniques.</p>
+                <a href="#services" class="cta-button">Découvrez nos services</a>
             </div>
         </section>
 
-        <section id="Apropos" data-aos="fade-up">
-            <div class="about-container">
-                <div class="text_wrap">
-                    <h1>Docteur</h1>
-                    <h2>Alpha Bérété</h2>
-                    <h3>President de l'ONG Médicale Priorité Santé Guinnée</h3>
-                    <p class="a-subtitle"> Depuis plus de 10 ans, notre ONG s'engage à offrir un accès aux soins et à l'accompagnement pour les populations les plus vulnérables.
-                        Grâce à une équipe passionnée et à un réseau de partenaires engagés, nous avons pu soutenir plus de 5 000 bénéficiaires à travers des actions concrètes, innovantes et humaines. <br>
-                        Notre mission : soigner, protéger et redonner espoir à ceux qui en ont le plus besoin.
-                    </p>
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/about-us-image.jpg" alt="Notre équipe médicale">
+                    </div>
+                    <div class="about-text">
+                        <h2 class="section-title">Votre Santé, Notre Priorité</h2>
+                        <p class="slogan">Plus de 10 ans d'expérience dans la fourniture de soins de santé exceptionnels.</p>
+                        <p>Notre ONG est née de la volonté de rendre les soins de santé de qualité accessibles à tous, en particulier dans les communautés mal desservies. Nous croyons fermement qu'une bonne santé est un droit fondamental et nous nous efforçons chaque jour de faire de cette conviction une réalité.</p>
+                        <p>Avec une équipe de professionnels passionnés et dévoués, nous offrons une large gamme de services médicaux, de la prévention au traitement, dans un environnement accueillant et respectueux.</p>
+                        <a href="#contact" class="cta-button">Nous Contacter</a>
+                    </div>
                 </div>
-                <img src="./Images/president.png" alt="">
             </div>
-           
         </section>
         <section class="quick-actions">
             <h2>Je veux...</h2>
@@ -250,17 +190,17 @@
             <div class="teamWrap">
                 <div class="team-grid">
                     <div class="team-card" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="./Images/Vice-president.png" alt="cause 1">
+                        <img src="images/Vice-president.png" alt="cause 1">
                         <h3>Vice-president</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
                     </div>
                     <div class="team-card" data-aos="zoom-in" data-aos-delay="200">
-                        <img src="./Images/diretrice.png" alt="cause 2">
+                        <img src="images/diretrice.png" alt="cause 2">
                         <h3>Secretaire</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
                     </div>
                     <div class="team-card" data-aos="zoom-in" data-aos-delay="300">
-                        <img src="./Images/directeur.png" alt="cause 3">
+                        <img src="images/directeur.png" alt="cause 3">
                         <h3>Responsable logistique</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
                     </div>
@@ -273,44 +213,43 @@
             </div>
         </section>
      
-        <section id="services" class="section">
-            <h2 data-aos="fade-up">Services</h2>
-            <p style="width: 400px; margin: 0 auto;" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur,
-                adipisicing elit.</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="./Images/crampes-musculaires.png" alt="service 1">
-                    <h3>Chirurgie générale</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
-                </div>
-                <div class="service-card">
-                    <img src="./Images/organique.png" alt="service 1">
-                    <h3>Chirurgie</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
-                </div>
-                <div class="service-card">
-                    <img src="./Images/urologie.png" alt="service 1">
-                    <h3>Dermatologie</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
-                </div>
-                <div class="service-card">
-                    <img src="./Images/rein.png" alt="service 1">
-                    <h3>Cardiologie</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
-                </div>
-                <div class="service-card">
-                    <img src="./Images/diagnostic.png" alt="service 1">
-                    <h3>Pédiatrie</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
-                </div>
-                <div class="service-card">
-                    <img src="./Images/diagnostic.png" alt="service 1">
-                    <h3>Maternité</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, facilis, ipsam,</p>
+        <section id="services" class="section services-section">
+            <div class="container">
+                <h2 class="section-title">Découvrez Nos Spécialités</h2>
+                <p class="section-subtitle">Nous offrons une large gamme de services médicaux pour répondre à tous vos besoins de santé.</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-stethoscope"></i></div>
+                        <h3>Médecine Générale</h3>
+                        <p>Des consultations complètes pour le diagnostic et le traitement des maladies courantes.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-pills"></i></div>
+                        <h3>Pharmacie</h3>
+                        <p>Une pharmacie bien approvisionnée avec des médicaments de qualité et des conseils pharmaceutiques.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-x-ray"></i></div>
+                        <h3>Radiologie</h3>
+                        <p>Des services d'imagerie médicale de pointe pour des diagnostics précis.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-baby"></i></div>
+                        <h3>Pédiatrie</h3>
+                        <p>Soins spécialisés pour les nourrissons, les enfants et les adolescents.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Cardiologie</h3>
+                        <p>Prévention, diagnostic et traitement des maladies du cœur et des vaisseaux sanguins.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-tooth"></i></div>
+                        <h3>Dentisterie</h3>
+                        <p>Soins dentaires complets, de la prévention aux traitements complexes.</p>
+                    </div>
                 </div>
             </div>
-            <button class="read_more">Lire plus</button>
-
         </section>
 
         <section id="cliniques" class="section">
@@ -320,7 +259,7 @@
 
             <div class="cliniques-grid">
                 <div class="cliniques-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="./Images/cinematic-man.png" alt="cliniques 1">
+                    <img src="images/cinematic-man.png" alt="cliniques 1">
                     <h1><i class="fas fa-hospital-alt"></i> Clinique Saint-Jean</h1>
                     <p><i class="fas fa-stethoscope"></i> Spécialisée en chirurgie</p>
                     <div class="card-contact">
@@ -406,48 +345,41 @@
 
         </section>
 
-        <section id="testimonials" class="section">
-            <h2 data-aos="fade-up">Témoignages</h2>
-            <p style="width: 400px; margin: 0 auto;" data-aos="fade-up">Ce que nos patients disent de nous</p>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="testimonial-content">
+        <section id="testimonials" class="section testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Ce que disent nos patients</h2>
+                <p class="section-subtitle">Leur satisfaction est notre plus grande récompense.</p>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
                         <i class="fas fa-quote-left"></i>
-                        <p>J'ai été très impressionné par le professionnalisme et la qualité des soins reçus à Priorité Santé. L'équipe médicale est attentionnée et compétente.</p>
+                        <p>L'accueil est chaleureux et les médecins sont d'une compétence remarquable. On se sent vraiment en confiance. Je n'hésiterai pas à revenir.</p>
                         <div class="testimonial-author">
-                            <img src="./Images/president.png" alt="Patient 1">
+                            <img src="images/patient1.jpg" alt="Patient 1">
                             <div class="author-info">
-                                <h4>Mamadou Diallo</h4>
-                                <p>Patient</p>
+                                <h4>Aïssatou Diallo</h4>
+                                <span>Patiente</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="testimonial-content">
+                    <div class="testimonial-card">
                         <i class="fas fa-quote-left"></i>
-                        <p>Une expérience exceptionnelle. Les médecins ont pris le temps de m'expliquer mon traitement et de répondre à toutes mes questions.</p>
+                        <p>Une prise en charge rapide et efficace. L'équipe a fait preuve d'un grand professionnalisme et d'une humanité qui fait chaud au cœur. Merci infiniment.</p>
                         <div class="testimonial-author">
-                            <img src="./Images/president.png" alt="Patient 2">
+                            <img src="images/patient2.jpg" alt="Patient 2">
                             <div class="author-info">
-                                <h4>Aminata Camara</h4>
-                                <p>Patient</p>
+                                <h4>Mamadou Barry</h4>
+                                <span>Patient</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="testimonial-content">
+                    <div class="testimonial-card">
                         <i class="fas fa-quote-left"></i>
-                        <p>L'accueil est chaleureux et le personnel est très à l'écoute. Je recommande vivement cette clinique pour la qualité de ses services.</p>
+                        <p>Les installations sont modernes et propres, et le personnel est toujours souriant et prêt à aider. Une expérience très positive que je recommande.</p>
                         <div class="testimonial-author">
-                            <img src="./Images/president.png" alt="Patient 3">
+                            <img src="images/patient3.jpg" alt="Patient 3">
                             <div class="author-info">
-                                <h4>Ibrahima Bah</h4>
-                                <p>Patient</p>
+                                <h4>Fatoumata Camara</h4>
+                                <span>Patiente</span>
                             </div>
                         </div>
                     </div>
@@ -493,32 +425,37 @@
             </ul>
         </section>
 
-        <section id="contact" data-aos="fade-up">
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Contactez-nous</h2>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Téléphone</h3>
-                                <p>+224 623 10 96 92</p>
-                                <p>+224 623 10 96 92</p>
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Prenez Contact Avec Nous</h2>
+                <p class="section-subtitle">Nous sommes là pour répondre à toutes vos questions. N'hésitez pas à nous contacter.</p>
+                <div class="contact-content">
+                    <div class="contact-form">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Votre Nom Complet" required>
                             </div>
-                            <div>
-                                <h3>Email</h3>
-                                <p>prioritesante@gmail.com</p>
-                                <p>contact@ong-medicale.org</p>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Votre Adresse E-mail" required>
                             </div>
-                        </div>
-                     
-            
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Sujet de votre message">
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Écrivez votre message ici..." required></textarea>
+                            </div>
+                            <button type="submit" class="cta-button">Envoyer le Message</button>
+                        </form>
                     </div>
-                  
-                </div>
-                <div class="map-section">
-                    <h2>Localisation des Cliniques</h2>
-                    <div id="cliniques-map" class="cliniques-map"></div>
+                    <div class="contact-info">
+                        <h3>Nos Informations</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i><span>123 Avenue de la Santé, Conakry, Guinée</span></li>
+                            <li><i class="fas fa-phone-alt"></i><span>+224 123 456 789</span></li>
+                            <li><i class="fas fa-envelope"></i><span>contact@sante-guinee.org</span></li>
+                        </ul>
+                        <div id="map"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -526,51 +463,45 @@
 
 
         <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>À propos</h3>
-                    <p>ONG Médicale Priorité Santé Guinée s'engage à améliorer l'accès aux soins de santé de qualité
-                        pour tous les Guinéens.</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Nos Services</h3>
-                    <ul class="footer-links">
-                        <li><a href="services.html#medecine-generale">Médecine Générale</a></li>
-                        <li><a href="services.html#pediatrie">Pédiatrie</a></li>
-                        <li><a href="maternite.html">Maternité</a></li>
-                        <li><a href="services.html#chirurgie">Chirurgie</a></li>
-                        <li><a href="services.html#urgences">Urgences</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Nos Cliniques</h3>
-                    <ul class="footer-links">
-                        <li><a href="cliniques.html#conakry">Clinique de Conakry</a></li>
-                        <li><a href="cliniques.html#kindia">Centre Médical de Kindia</a></li>
-                        <li><a href="cliniques.html#kankan">Polyclinique de Kankan</a></li>
-                        <li><a href="cliniques.html#nzerekore">Centre de Santé de Nzérékoré</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-phone"></i> +224 623 10 96 92</li>
-                        <li><i class="fas fa-envelope"></i> prioritesante@gmail.com</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Marché Foncidaire</li>
-                        <li>Conakry, Guinée</li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>Suivez-nous</h3>
-                    <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-about">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="Logo ONG Médicale">
+                                <h1>Priorité Santé</h1>
+                            </a>
+                        </div>
+                        <p>Votre partenaire de confiance pour des soins de santé de qualité. Nous nous engageons à améliorer la santé et le bien-être de nos communautés.</p>
+                        <div class="social-media">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h3>Liens Rapides</h3>
+                        <ul>
+                            <li><a href="#home">Accueil</a></li>
+                            <li><a href="#about">À Propos</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#cliniques">Nos Cliniques</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contactez-nous</h3>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Avenue de la Santé, Conakry</li>
+                            <li><i class="fas fa-phone-alt"></i> +224 123 456 789</li>
+                            <li><i class="fas fa-envelope"></i> contact@sante-guinee.org</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 ONG Médicale Priorité Santé. Tous droits réservés.</p>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 ONG Médicale Priorité Santé. Tous droits réservés.</p>
+                </div>
             </div>
         </footer>
 
@@ -584,7 +515,7 @@
             offset: 100
         });
     </script>
-    <script src="Scripts/main.js"></script>
+    <script src="js/main.js"></script>
 
     <!-- Ajouter les scripts Firebase avant la fermeture du body -->
     <script src="https://www.gstatic.com/firebasejs/9.x.x/firebase-app.js"></script>
