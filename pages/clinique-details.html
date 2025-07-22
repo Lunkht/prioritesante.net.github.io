@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Détails de la Clinique - Priorité Santé</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <nav class="navbar">
+            <div class="logo"><img src="../images/logo.jpg" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Accueil</a></li>
+                <li><a href="../index.html#services">Services</a></li>
+                <li><a href="./cliniques.html">Cliniques</a></li>
+                <li><a href="../index.html#partners">Partenaires</a></li>
+                <li><a href="./contact.html">Contacts</a></li>
+                <li><a href="./apropos.html">Apropos</a></li>
+            </ul>
+        </nav>
+        <section class="page-header">
+            <h1 id="clinic-name"></h1>
+        </section>
+
+        <section class="clinic-details-container">
+            <div class="clinic-details-card">
+                <img id="clinic-image" src="" alt="Image de la clinique" class="clinic-details-image">
+                <div class="clinic-details-info">
+                    <h2 id="clinic-specialty"></h2>
+                    <p id="clinic-address"></p>
+                    <p id="clinic-phone"></p>
+                    <p id="clinic-details-text"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/cliniques-data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const clinicId = parseInt(params.get('id'));
+            const clinic = cliniques.find(c => c.id === clinicId);
+
+            if (clinic) {
+                document.getElementById('clinic-name').textContent = clinic.name;
+                document.getElementById('clinic-image').src = clinic.image;
+                document.getElementById('clinic-specialty').textContent = clinic.specialty;
+                document.getElementById('clinic-address').textContent = `Adresse : ${clinic.address}`;
+                document.getElementById('clinic-phone').textContent = `Téléphone : ${clinic.phone}`;
+                document.getElementById('clinic-details-text').textContent = clinic.details;
+            } else {
+                document.getElementById('clinic-name').textContent = 'Clinique non trouvée';
+            }
+        });
+    </script>
+</body>
+</html>

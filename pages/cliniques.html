@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Cliniques - Priorité Santé</title>
-    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="stylesheet" type="text/css" href="../styles/footer.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
@@ -60,42 +60,12 @@
             </form>
         </div>
 
-        <section class="cliniques-grid">
-            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="../Images/cinematic-man.png" alt="cliniques 1">
-                <h3>Clinique Saint-Jean</h3>
-                <p>Spécialisée en chirurgie</p>
-                <h1 class="numero">+224 623 10 96 92</h1>
-                <h3>Foncidaire /Lambanyi</h3>
-            </div>
-            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="../Images/cinematic-man.png" alt="cliniques 1">
-                <h3>Centre Médical du Sud</h3>
-                <p>Médecine générale et urgences</p>
-                <h1 class="numero">+224 623 10 96 92</h1>
-                <h3>Dixinn /Dixinn</h3>
-            </div>
-            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="../Images/cinematic-man.png" alt="cliniques 1">
-                <h3>Centre Médical du Sud</h3>
-                <p>Médecine générale et urgences</p>
-                <h1 class="numero">+224 623 10 96 92</h1>
-                <h3>Cimenterie /dubreka</h3>
-            </div>
-            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="400">
-                <img src="../Images/cinematic-man.png" alt="cliniques 1">
-                <h3>Centre Médical du Sud</h3>
-                <p>Médecine générale et urgences</p>
-                <h1 class="numero">+224 623 10 96 92</h1>
-                <h3>Almamya /kaloum</h3>
-            </div>
-            <div class="cliniques-card" data-aos="fade-up" data-aos-delay="500">
-                <img src="../Images/cinematic-man.png" alt="cliniques 1">
-                <h3>Centre Médical du Sud</h3>
-                <p>Médecine générale et urgences</p>
-                <h1 class="numero">+224 623 10 96 92</h1>
-                <h3>Sangoyah /matoto</h3>
-            </div>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <!-- Les boutons de filtre seront générés ici -->
+        </div>
+        <section id="cliniques-grid" class="cliniques-grid">
+            <!-- Les cliniques seront chargées ici par JavaScript -->
         </section>
 
         <div class="map-section">
@@ -112,7 +82,78 @@
             offset: 100
         });
     </script>
+    <script src="../js/cliniques-data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cliniquesGrid = document.getElementById('cliniques-grid');
+            const filterButtonsContainer = document.querySelector('.filter-buttons');
+
+            const categories = ['all', ...new Set(cliniques.map(c => c.category))];
+
+            categories.forEach(category => {
+                if (category !== 'all') {
+                    const button = document.createElement('button');
+                    button.classList.add('filter-btn');
+                    button.dataset.filter = category;
+                    button.textContent = category;
+                    filterButtonsContainer.appendChild(button);
+                }
+            });
+
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            const displayClinics = (filter) => {
+                cliniquesGrid.innerHTML = '';
+                const filteredClinics = filter === 'all' ? cliniques : cliniques.filter(c => c.category === filter);
+
+                const cliniquesByCategory = filteredClinics.reduce((acc, clinic) => {
+                    if (!acc[clinic.category]) {
+                        acc[clinic.category] = [];
+                    }
+                    acc[clinic.category].push(clinic);
+                    return acc;
+                }, {});
+
+                for (const category in cliniquesByCategory) {
+                    const categoryTitle = document.createElement('h2');
+                    categoryTitle.textContent = category;
+                    categoryTitle.classList.add('category-title');
+                    cliniquesGrid.appendChild(categoryTitle);
+
+                    const categoryClinics = cliniquesByCategory[category];
+                    categoryClinics.forEach(clinic => {
+                        const clinicCard = document.createElement('div');
+                        clinicCard.classList.add('cliniques-card');
+                        clinicCard.setAttribute('data-aos', 'fade-up');
+
+                        clinicCard.innerHTML = `
+                            <a href="./clinique-details.html?id=${clinic.id}" class="clinic-link">
+                                <img src="${clinic.image}" alt="${clinic.name}">
+                                <h3>${clinic.name}</h3>
+                                <p>${clinic.specialty}</p>
+                                <h1 class="numero">${clinic.phone}</h1>
+                                <h3>${clinic.address}</h3>
+                            </a>
+                        `;
+                        cliniquesGrid.appendChild(clinicCard);
+                    });
+                }
+                AOS.refresh();
+            };
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+                    displayClinics(button.dataset.filter);
+                });
+            });
+
+            // Initial display
+            displayClinics('all');
+        });
+    </script>
     <script src="../Scripts/main.js"></script>
 </body>
 
-</html> 
+</html>
