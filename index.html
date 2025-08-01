@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinique Priorité Santé</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Clinique Priorité Santé</h1>
+            <nav>
+                <ul>
+                    <li><a href="#a-propos">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#equipe">Notre Équipe</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Soins de santé de qualité pour tous</h2>
+                <p>Votre santé est notre priorité. Nous offrons des services médicaux complets avec compassion et expertise.</p>
+                <a href="#contact" class="btn">Prendre Rendez-vous</a>
+            </div>
+        </section>
+
+        <section id="a-propos">
+            <div class="container about-us-container">
+                <div class="about-us-content">
+                    <h2>À Propos de Nous</h2>
+                    <p>La Clinique Priorité Santé est une organisation non gouvernementale dédiée à fournir des soins de santé accessibles et de haute qualité aux communautés mal desservies. Inspirés par l'excellence des hôpitaux de New York, nous nous efforçons d'apporter les meilleures pratiques médicales à nos patients.</p>
+                </div>
+                <div class="about-us-image">
+                    <img src="images/laptop1.jpg" alt="À propos de nous">
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Nos Services</h2>
+                <div class="service-grid">
+                    <div class="service-item">
+                        <i class="fas fa-user-md fa-3x"></i>
+                        <h3>Consultations Générales</h3>
+                        <p>Des médecins expérimentés pour tous vos besoins de santé primaires.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-stethoscope fa-3x"></i>
+                        <h3>Soins Spécialisés</h3>
+                        <p>Accès à des spécialistes dans divers domaines médicaux.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fas fa-ambulance fa-3x"></i>
+                        <h3>Services d'Urgence</h3>
+                        <p>Prise en charge rapide et efficace des urgences médicales.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="equipe">
+            <div class="container">
+                <h2>Notre Équipe</h2>
+                <p>Rencontrez nos professionnels de la santé dévoués.</p>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <h2>Ce que disent nos patients</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <img src="images/phone3.jpg" alt="Patient 1">
+                        <p>"Un service exceptionnel et une équipe attentionnée. Je me suis senti entre de bonnes mains dès mon arrivée."</p>
+                        <cite>- Jean Dupont</cite>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="images/phone4.jpg" alt="Patient 2">
+                        <p>"La Clinique Priorité Santé a changé ma vie. Les médecins sont compétents et l'approche est vraiment centrée sur le patient."</p>
+                        <cite>- Marie Martin</cite>
+                    </div>
+                    <div class="testimonial-item">
+                        <img src="images/phone5.jpg" alt="Patient 3">
+                        <p>"Je recommande vivement cette clinique. L'accès à des soins de qualité près de chez moi est une véritable bénédiction."</p>
+                        <cite>- Paul Bernard</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partenaires">
+            <div class="container">
+                <h2>Nos Cliniques Partenaires</h2>
+                <div id="filter-buttons">
+                    <button class="btn active" data-filter="all">Toutes</button>
+                    <button class="btn" data-filter="cardiologie">Cardiologie</button>
+                    <button class="btn" data-filter="dentaire">Dentaire</button>
+                    <button class="btn" data-filter="pediatrie">Pédiatrie</button>
+                    <button class="btn" data-filter="neurologie">Neurologie</button>
+                    <button class="btn" data-filter="ophtalmologie">Ophtalmologie</button>
+                </div>
+                <div class="partner-grid">
+                    <div class="partner-card" data-specialty="cardiologie">
+                        <img src="images/clinic1.jpg" alt="Clinique du Coeur">
+                        <div class="partner-info">
+                            <h3>Clinique du Coeur</h3>
+                            <p><strong>Spécialité:</strong> Cardiologie</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Rue de la Santé, Paris</p>
+                            <p><i class="fas fa-phone"></i> 01 23 45 67 89</p>
+                            <p><i class="fas fa-envelope"></i> contact@cliniqueducoeur.fr</p>
+                        </div>
+                    </div>
+                    <div class="partner-card" data-specialty="dentaire">
+                        <img src="images/clinic2.jpg" alt="Sourire Parfait">
+                        <div class="partner-info">
+                            <h3>Sourire Parfait</h3>
+                            <p><strong>Spécialité:</strong> Dentaire</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 45 Avenue des Dents, Lyon</p>
+                            <p><i class="fas fa-phone"></i> 04 56 78 90 12</p>
+                            <p><i class="fas fa-envelope"></i> contact@sourireparfait.fr</p>
+                        </div>
+                    </div>
+                    <div class="partner-card" data-specialty="pediatrie">
+                        <img src="images/clinic3.jpg" alt="Hôpital des Enfants">
+                        <div class="partner-info">
+                            <h3>Hôpital des Enfants</h3>
+                            <p><strong>Spécialité:</strong> Pédiatrie</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 78 Boulevard des Petits, Marseille</p>
+                            <p><i class="fas fa-phone"></i> 04 12 34 56 78</p>
+                            <p><i class="fas fa-envelope"></i> contact@hopitaldesenfants.fr</p>
+                        </div>
+                    </div>
+                    <div class="partner-card" data-specialty="neurologie">
+                        <img src="images/phone1.jpg" alt="Clinique Neurologique">
+                        <div class="partner-info">
+                            <h3>Clinique Neurologique</h3>
+                            <p><strong>Spécialité:</strong> Neurologie</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 1 Rue du Cerveau, Bordeaux</p>
+                            <p><i class="fas fa-phone"></i> 05 12 34 56 78</p>
+                            <p><i class="fas fa-envelope"></i> contact@cliniqueneuro.fr</p>
+                        </div>
+                    </div>
+                    <div class="partner-card" data-specialty="ophtalmologie">
+                        <img src="images/phone2.jpg" alt="Centre Vision Claire">
+                        <div class="partner-info">
+                            <h3>Centre Vision Claire</h3>
+                            <p><strong>Spécialité:</strong> Ophtalmologie</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 2 Avenue de l'Oeil, Toulouse</p>
+                            <p><i class="fas fa-phone"></i> 05 87 65 43 21</p>
+                            <p><i class="fas fa-envelope"></i> contact@visionclaire.fr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contactez-Nous</h2>
+                <form>
+                    <input type="text" name="nom" placeholder="Votre Nom" required>
+                    <input type="email" name="email" placeholder="Votre Email" required>
+                    <textarea name="message" placeholder="Votre Message" required></textarea>
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Clinique Priorité Santé. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
